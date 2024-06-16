@@ -43,7 +43,7 @@ def load_data():
 df_merged = load_data()
 
 # Lectura del archivo shapefile 'world'
-world = gpd.read_file("C:/Users/Ana Asensio/Desktop/UNI/MIARFID/BLOQUE 2/VD/proyecto_final/110m_cultural/ne_110m_admin_0_countries.shp")
+world = gpd.read_file("110m_cultural/ne_110m_admin_0_countries.shp")
 
 # Renombrar columna para que coincida con el DataFrame df_merged
 world = world.rename(columns={'NAME': 'Entity'})
